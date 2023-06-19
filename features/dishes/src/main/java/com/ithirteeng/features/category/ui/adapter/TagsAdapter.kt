@@ -18,13 +18,23 @@ class TagsAdapter(
         private val binding = TagItemLayoutBinding.bind(view)
 
         fun bind(tag: TagModel) {
+
             (view as TagView).onClick {
                 tag.isChosen = !tag.isChosen
                 onTagClick(tag)
             }
+
+            if (tag == getItem(0)){
+                view.setState(true)
+                tag.isChosen = view.getState()
+                binding.tagNameTextView.text = tag.tag
+                return
+            }
+
             view.setState(false)
             tag.isChosen = view.getState()
             binding.tagNameTextView.text = tag.tag
+
         }
     }
 
@@ -34,8 +44,8 @@ class TagsAdapter(
     }
 
     override fun onBindViewHolder(holder: TagsViewHolder, position: Int) {
-        val item = getItem(position)
-        holder.bind(item)
+        val tag = getItem(position)
+        holder.bind(tag)
     }
 
     fun getFilters(): List<String> {
