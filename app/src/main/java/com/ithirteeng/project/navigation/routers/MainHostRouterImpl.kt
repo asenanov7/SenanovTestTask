@@ -1,4 +1,4 @@
-package com.ithirteeng.dishesshopproject.navigation.routers
+package com.ithirteeng.project.navigation.routers
 
 import com.ithirteeng.features.cart.ui.CartFragment
 import com.ithirteeng.features.main.MainFragment

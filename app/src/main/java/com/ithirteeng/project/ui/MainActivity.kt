@@ -1,4 +1,4 @@
-package com.ithirteeng.dishesshopproject.ui
+package com.ithirteeng.project.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import com.github.terrakok.cicerone.NavigatorHolder
 import com.github.terrakok.cicerone.Router
 import com.github.terrakok.cicerone.androidx.AppNavigator
 import com.ithirteeng.common.extensions.GLOBAL_ROUTER
-import com.ithirteeng.dishesshopproject.R
+import com.ithirteeng.project.R
 import com.ithirteeng.features.mainhost.MainHostActivity
 import org.koin.android.ext.android.inject
 import org.koin.core.qualifier.named

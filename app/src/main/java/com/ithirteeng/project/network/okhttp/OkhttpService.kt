@@ -1,6 +1,6 @@
-package com.ithirteeng.dishesshopproject.network.okhttp
+package com.ithirteeng.project.network.okhttp
 
-import com.ithirteeng.dishesshopproject.network.interceptor.NetworkConnectionInterceptor
+import com.ithirteeng.project.network.interceptor.NetworkConnectionInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit

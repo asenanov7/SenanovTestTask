@@ -2,7 +2,7 @@ package com.example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ithirteeng.dishesshopproject.R
+import com.ithirteeng.project.R
 
 
 class MainActivity : AppCompatActivity() {

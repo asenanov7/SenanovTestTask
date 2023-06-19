@@ -1,12 +1,12 @@
-package com.ithirteeng.dishesshopproject.di
+package com.ithirteeng.project.di
 
 import com.github.terrakok.cicerone.Cicerone
 import com.github.terrakok.cicerone.Router
 import com.ithirteeng.common.extensions.GLOBAL_ROUTER
 import com.ithirteeng.common.extensions.LOCAL_ROUTER
 import com.ithirteeng.common.extensions.MAIN_HOST_ROUTER
-import com.ithirteeng.dishesshopproject.navigation.createCicerone
-import com.ithirteeng.dishesshopproject.navigation.routers.BottomNavigationRouter
+import com.ithirteeng.project.navigation.createCicerone
+import com.ithirteeng.project.navigation.routers.BottomNavigationRouter
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 

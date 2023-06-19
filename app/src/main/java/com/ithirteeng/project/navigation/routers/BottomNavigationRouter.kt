@@ -1,4 +1,4 @@
-package com.ithirteeng.dishesshopproject.navigation.routers
+package com.ithirteeng.project.navigation.routers
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData

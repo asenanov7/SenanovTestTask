@@ -1,4 +1,4 @@
-package com.ithirteeng.dishesshopproject.navigation.routers
+package com.ithirteeng.project.navigation.routers
 
 import com.github.terrakok.cicerone.Router
 import com.ithirteeng.features.category.presentation.DishesRouter

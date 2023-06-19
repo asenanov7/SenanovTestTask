@@ -1,8 +1,8 @@
-package com.ithirteeng.dishesshopproject.network
+package com.ithirteeng.project.network
 
 import android.content.Context
-import com.ithirteeng.dishesshopproject.BuildConfig
-import com.ithirteeng.dishesshopproject.network.interceptor.NetworkConnectionInterceptor
+import com.ithirteeng.project.BuildConfig
+import com.ithirteeng.project.network.interceptor.NetworkConnectionInterceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

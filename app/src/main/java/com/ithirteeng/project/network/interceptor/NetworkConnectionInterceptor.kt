@@ -1,4 +1,4 @@
-package com.ithirteeng.dishesshopproject.network.interceptor
+package com.ithirteeng.project.network.interceptor
 
 import android.content.Context
 import android.net.ConnectivityManager

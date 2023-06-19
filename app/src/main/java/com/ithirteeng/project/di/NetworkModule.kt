@@ -1,9 +1,9 @@
-package com.ithirteeng.dishesshopproject.di
+package com.ithirteeng.project.di
 
-import com.ithirteeng.dishesshopproject.network.okhttp.setupOkHttpClient
-import com.ithirteeng.dishesshopproject.network.provideLoggingInterceptor
-import com.ithirteeng.dishesshopproject.network.provideNetworkConnectionInterceptor
-import com.ithirteeng.dishesshopproject.network.provideRetrofit
+import com.ithirteeng.project.network.okhttp.setupOkHttpClient
+import com.ithirteeng.project.network.provideLoggingInterceptor
+import com.ithirteeng.project.network.provideNetworkConnectionInterceptor
+import com.ithirteeng.project.network.provideRetrofit
 import org.koin.dsl.module
 
 val networkModule = module {

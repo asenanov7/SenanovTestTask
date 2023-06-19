@@ -1,10 +1,10 @@
-package com.ithirteeng.dishesshopproject
+package com.ithirteeng.project
 
 import android.app.Application
 import com.ithirteeng.common.cart.di.dishesCartModule
-import com.ithirteeng.dishesshopproject.di.ciceroneModule
-import com.ithirteeng.dishesshopproject.di.networkModule
-import com.ithirteeng.dishesshopproject.di.routersModule
+import com.ithirteeng.project.di.ciceroneModule
+import com.ithirteeng.project.di.networkModule
+import com.ithirteeng.project.di.routersModule
 import com.ithirteeng.features.cart.di.cartModule
 import com.ithirteeng.features.category.di.dishesModule
 import com.ithirteeng.features.kitchens.di.kitchensModule
