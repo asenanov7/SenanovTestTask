@@ -1,0 +1,34 @@
+apply plugin: Plugins.ANDROID_APPLICATION
+apply plugin: Plugins.KOTLIN_ANDROID
+
+apply from: "$rootDir/build-system/module-types/android-app.gradle"
+
+dependencies {
+    implementation Dependencies.KOTLIN_STANDARD_LIBRARY
+    implementation Dependencies.CORE
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation Dependencies.MATERIAL
+    implementation Dependencies.FRAGMENT
+    implementation Dependencies.CONSTRAINT_LAYOUT
+    implementation Dependencies.KOIN_CORE
+    implementation Dependencies.KOIN_ANDROID
+    implementation Dependencies.CICERONE
+    implementation Dependencies.RETROFIT
+    implementation Dependencies.OKHTTP_INTERCEPTOR
+    implementation Dependencies.GSON
+    implementation Dependencies.GSON_CONVERTER
+
+    implementation project(":common:design")
+    implementation project(":common:network")
+    implementation project(":common:extensions")
+    implementation project(":common:helpers")
+    implementation project(':common:cart')
+
+    implementation project(":features:mainhost")
+    implementation project(":features:main")
+    implementation project(':features:dishes')
+    implementation project(":features:product")
+    implementation project(':features:cart')
+    implementation project(':features:kitchens')
+
+}
