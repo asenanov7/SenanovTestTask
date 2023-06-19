@@ -17,19 +17,16 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        style="@style/Theme.DishesShop.Toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/tagsRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/padding_16"
             android:paddingVertical="@dimen/padding_16">
 
             <TextView
@@ -37,47 +34,41 @@
                 style="@style/Theme.DishesShop.Headline1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="center_horizontal|center_vertical"
                 android:text="@string/kitchen_name"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cardView"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/backButton"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed" />
 
-            <androidx.cardview.widget.CardView
+            <ImageView
                 android:id="@+id/cardView"
                 android:layout_width="@dimen/size_44"
                 android:layout_height="@dimen/size_44"
-                app:cardCornerRadius="100dp"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintStart_toEndOf="@id/kitchenNameTextView"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/avatar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/kitchenNameTextView"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_content_description"
-                    android:src="@drawable/avatar" />
-            </androidx.cardview.widget.CardView>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/backButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/margin_8"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:adjustViewBounds="true"
                 android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="@string/image_content_description"
-                android:padding="@dimen/size_10"
                 android:src="@drawable/back_icon"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/kitchenNameTextView"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@id/kitchenNameTextView"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView"
                 tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -89,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_4"
-        android:background="@color/main_white"
+        android:background="@color/white"
         android:clipToPadding="false"
         android:orientation="horizontal"
         android:paddingHorizontal="@dimen/padding_16"
