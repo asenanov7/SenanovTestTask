@@ -89,7 +89,6 @@ class DishesFragment : Fragment() {
     private fun setupObservers() {
         observeDishesLiveData()
         observeTagsLiveData()
-        observeCompletionLiveData()
     }
 
     private fun observeDishesLiveData() {
@@ -104,15 +103,7 @@ class DishesFragment : Fragment() {
         }
     }
 
-    private fun observeCompletionLiveData() {
-        viewModel.completionLiveData.observe(this.viewLifecycleOwner) { isCompleted ->
-            if (isCompleted) {
-                binding.progressBar.visibility = View.GONE
-            } else {
-                binding.progressBar.visibility = View.VISIBLE
-            }
-        }
-    }
+
 
     private fun getCategoryName() {
         val category = arguments?.getString(CATEGORY_NAME)
