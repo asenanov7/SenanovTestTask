@@ -45,7 +45,6 @@ class KitchensFragment : Fragment() {
     }
 
     private fun setupViews() {
-        binding.progressBar.visibility = View.VISIBLE
         binding.categoriesRecyclerView.adapter = categoriesAdapter
         binding.dateTextView.text = DateHelper.getDateInFullFormat()
     }
