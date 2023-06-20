@@ -18,7 +18,6 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        style="@style/Theme.DishesShop.Toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/categoriesRecyclerView"
@@ -29,8 +28,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/padding_16"
-            android:paddingVertical="@dimen/padding_16">
+            android:paddingVertical="@dimen/padding_6">
 
             <TextView
                 android:id="@+id/locationTextView"
@@ -39,7 +37,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/some_location"
                 app:layout_constraintBottom_toTopOf="@+id/dateTextView"
-                app:layout_constraintEnd_toStartOf="@+id/cardView"
+                app:layout_constraintEnd_toStartOf="@+id/avatar"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/locationIconImageView"
                 app:layout_constraintTop_toTopOf="parent"
@@ -56,23 +56,18 @@
                 app:layout_constraintStart_toStartOf="@+id/locationTextView"
                 app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
+
+            <ImageView
+                android:id="@+id/avatar"
                 android:layout_width="@dimen/size_44"
                 android:layout_height="@dimen/size_44"
-                app:cardCornerRadius="100dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/avatar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/locationTextView"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_content_description"
-                    android:src="@drawable/avatar" />
-            </androidx.cardview.widget.CardView>
 
             <ImageView
                 android:id="@+id/locationIconImageView"
